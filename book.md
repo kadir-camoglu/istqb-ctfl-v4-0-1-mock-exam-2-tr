@@ -2,7 +2,7 @@
 
 ## Sınav hakkında
 
-Bu çalışma, İngilizce Deneme Sınavı 2 esas alınarak hazırlanmıştır. Ders programına (syllabus) uygun kavramları Türkçe sorularla çalışabilirsiniz. 40 soru, dört seçenek ve her soruda tek doğru cevap vardır. Her soru 1 puandır; geçme çizgisi 26/40 (%65), standart süre 60 dakikadır.
+Bu çalışma, İngilizce Deneme Sınavı 2 esas alınarak hazırlanmıştır. Soru ve seçenekler önce İngilizce (EN), hemen altında Türkçe (TR) verilir; açıklamalar Türkçedir. İki dil aynı soruyu ve aynı seçenekleri gösterir; her soru için tek cevap işaretleyin. 40 soru, dört seçenek ve her soruda tek doğru cevap vardır. Her soru 1 puandır; geçme çizgisi 26/40 (%65), standart süre 60 dakikadır.
 
 **Süreyi doğru seçin.** TTB'nin Türkçe/İngilizce kitapçığıyla sınava giren ana dili Türkçe aday için süre 60 dakikadır. Ana dili Türkçe olmayan aday için TTB 75 dakika belirtir. Ek süre sınav dili ve sağlayıcı koşullarına bağlıdır. Sınava kaydolmadan önce [TTB'nin güncel koşullarını](https://www.turkishtestingboard.org/kayit/foundation-level-certified-tester/) kontrol edin.
 
@@ -49,6 +49,38 @@ Cevap anahtarını açmadan önce bütün soruları tamamlayın.
 
 **Soru 1** (1 puan)
 
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A discount service uses the following five feasible rules. The tiers are S = Standard, G = Gold and P = Platinum. D = true and Y = false. A dash means that the coupon value does not affect that rule. For coverage, use the five columns as listed without merging them.
+
+| Condition / action | R1 | R2 | R3 | R4 | R5 |
+|---|---|---|---|---|---|
+| Customer tier | S | G | G | P | P |
+| Valid coupon | – | D | Y | D | Y |
+| 0% discount | X | – | – | – | – |
+| 20% discount | – | X | – | – | – |
+| 10% discount | – | – | X | – | – |
+| 30% discount | – | – | – | X | – |
+| 15% discount | – | – | – | – | X |
+
+The executed tests use (Standard, D), (Gold, D), (Standard, Y) and (Gold, D). What is the smallest number of additional test cases needed to reach 100% coverage of the listed rules?
+
+a) 1
+
+b) 3
+
+c) 2
+
+d) 5
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
+
 Bir indirim servisi aşağıdaki beş uygulanabilir kuralı kullanır. S = Standart, G = Altın, P = Platin; D = doğru, Y = yanlış. Kupon koşulundaki “–”, bu koşulun kuralı etkilemediğini gösterir. Kapsam hesabında sütunları birleştirmeden aşağıdaki beş kuralı kullanın.
 
 | Koşul / aksiyon | R1 | R2 | R3 | R4 | R5 |
@@ -71,9 +103,31 @@ c) 2
 
 d) 5
 
+</div>
+
 
 
 **Soru 2** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+At the end of a release, the team archives the test environment configuration and the testware, hands selected regression tests over to the maintenance team, and analyzes lessons learned to improve future testing. Which test activity does this describe?
+
+a) Test completion
+
+b) Test monitoring and control
+
+c) Test implementation
+
+d) Test planning
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir sürümün testleri bittikten sonra ekip, test ortamı ayarlarını ve test çalışma ürünlerini arşivler, seçilen regresyon testlerini bakım ekibine devreder ve sonraki çalışmaları iyileştirmek için çıkarılan dersleri değerlendirir. Hangi test aktivitesi anlatılmaktadır?
 
@@ -85,9 +139,31 @@ c) Test uyarlama
 
 d) Test planlama
 
+</div>
+
 
 
 **Soru 3** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Which of the following is a potential benefit of test automation?
+
+a) It covers business needs beyond those represented in the automated checks
+
+b) It removes the effort required to maintain testware after product changes
+
+c) It makes the quality of results independent of the automated test design
+
+d) It enables more objective comparisons of the results of repeated checks
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Aşağıdakilerden hangisi test otomasyonunun sağlayabileceği bir faydadır?
 
@@ -99,9 +175,45 @@ c) Sonuçların kalitesini otomatik testlerin tasarımından bağımsız hâle g
 
 d) Tekrarlanan kontrollerin sonuçlarını daha nesnel biçimde karşılaştırmayı sağlaması
 
+</div>
+
 
 
 **Soru 4** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+An order system starts in the New state. The following transitions are defined; any transition not listed is invalid.
+
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="420" viewBox="0 0 320 420" role="img" aria-label="Order state diagram: New, Paid, Shipped, Delivered and Cancelled. All transitions are also listed in the table below." style="max-width:100%;height:auto;display:block;margin:1rem auto;color:inherit"><defs><marker id="m2-en-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker></defs><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="12" y="35" width="135" height="42" rx="8"/><rect x="12" y="135" width="135" height="42" rx="8"/><rect x="12" y="235" width="135" height="42" rx="8"/><rect x="12" y="335" width="135" height="42" rx="8"/><rect x="186" y="190" width="127" height="42" rx="8"/><g marker-end="url(#m2-en-arrow)"><path d="M80 15 V33"/><path d="M80 78 V133"/><path d="M80 178 V233"/><path d="M80 278 V333"/><path d="M148 56 H250 V187"/><path d="M148 156 L185 207"/></g></g><circle cx="80" cy="10" r="5" fill="currentColor"/><g fill="currentColor" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle"><text x="80" y="61">New</text><text x="80" y="161">Paid</text><text x="80" y="261">Shipped</text><text x="80" y="361">Delivered</text><text x="250" y="216">Cancelled</text><text x="103" y="111">pay</text><text x="112" y="211">ship</text><text x="113" y="311">deliver</text><text x="280" y="117">cancel</text><text x="184" y="168">cancel</text></g></svg>
+
+| Initial state | Event | Next state |
+|---|---|---|
+| New | pay | Paid |
+| New | cancel | Cancelled |
+| Paid | ship | Shipped |
+| Paid | cancel | Cancelled |
+| Shipped | deliver | Delivered |
+
+Text model: New —pay→ Paid —ship→ Shipped —deliver→ Delivered. From New and Paid, the cancel event leads to Cancelled. There are no outgoing transitions from Cancelled or Delivered.
+
+The team wants a negative test case that attempts an invalid transition. Which event sequence, starting in New, has an **invalid final step**?
+
+a) pay, ship, deliver
+
+b) pay, cancel
+
+c) cancel
+
+d) pay, ship, cancel
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir sipariş sisteminde başlangıç durumu Yeni’dir. Tanımlanan geçişler aşağıdaki gibidir; listelenmeyen bir geçiş geçersizdir.
 
@@ -127,9 +239,31 @@ c) iptal et
 
 d) öde, gönder, iptal et
 
+</div>
+
 
 
 **Soru 5** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A shared test environment has been baselined. A tester needs to change a configuration setting for an investigation, and other teams must be able to identify the setup used for each result. Which action supports configuration management?
+
+a) Overwrite the shared setting and use the investigation notes as the version history
+
+b) Put the setting change through change control and assign a configuration version
+
+c) Keep the existing configuration identifier while changing the setting for the next run
+
+d) Discard the old configuration once the changed environment has produced a result
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Paylaşılan bir test ortamı için temel çizgi (baseline) oluşturulmuştur. Bir test uzmanı inceleme amacıyla bir ayarı değiştirmek ister; diğer ekipler de her test sonucunda hangi ortamın kullanıldığını belirleyebilmelidir. Hangi işlem yapılandırma yönetimini (configuration management) destekler?
 
@@ -141,9 +275,31 @@ c) Sonraki koşumda ayarı değiştirirken mevcut yapılandırma kimliğini koru
 
 d) Değişen ortamdan sonuç alındığında önceki yapılandırmayı kayıttan çıkarmak
 
+</div>
+
 
 
 **Soru 6** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Which measure helps review participants who are unfamiliar with their assigned review roles?
+
+a) Give each participant a larger section so that practice replaces preparation
+
+b) Use the findings to compare participants' individual productivity
+
+c) Provide suitable training so that participants can perform their roles
+
+d) Choose a more formal review type as a substitute for preparing participants
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Gözden geçirmede kendilerine verilen rolleri tanımayan katılımcılara hangi önlem yardımcı olur?
 
@@ -155,9 +311,31 @@ c) Katılımcılara rollerini yerine getirebilmeleri için uygun eğitim vermek
 
 d) Katılımcıları hazırlamak yerine daha resmî bir gözden geçirme türü seçmek
 
+</div>
+
 
 
 **Soru 7** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Which change increases a risk level, assuming the other contributing factor remains unchanged?
+
+a) Increased likelihood with impact held constant
+
+b) Reduced likelihood with impact held constant
+
+c) Reduced impact with likelihood held constant
+
+d) Unchanged likelihood and unchanged impact
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Diğer katkı faktörü değişmeden kaldığında hangi değişiklik risk seviyesini artırır?
 
@@ -169,9 +347,31 @@ c) Olasılık sabitken etkinin azalması
 
 d) Olasılığın ve etkinin değişmemesi
 
+</div>
+
 
 
 **Soru 8** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+In test-driven development, which artifact is created first to guide the next small change to the code?
+
+a) An executable test for a small unit of behavior
+
+b) A narrative scenario agreed with business representatives
+
+c) A defect report describing a failure in the released product
+
+d) An execution log from the completed system test run
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Test güdümlü yazılım geliştirmede (TDD), koddaki bir sonraki küçük değişikliğe yön vermek için önce hangi iş ürünü oluşturulur?
 
@@ -183,9 +383,38 @@ c) Yayımlanan üründeki arızayı açıklayan hata raporu
 
 d) Tamamlanmış sistem testinin koşum kaydı
 
+</div>
+
 
 
 **Soru 9** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team divides all the testing work for a small release into two tasks. Experts provide these estimates in person-hours: a = optimistic, m = most likely, b = pessimistic.
+
+| Task | a | m | b |
+|---|---|---|---|
+| Import checks | 3 | 7 | 17 |
+| Notification checks | 5 | 9 | 25 |
+
+The team has allocated 20 person-hours for the two tasks together. Using three-point estimation for each task, which total required test effort and comparison with the allocation are correct? Use exact values; do not round intermediate results.
+
+a) 22 person-hours in total, exceeding the allocation by 2
+
+b) 19 person-hours in total, leaving 1 of the allocation
+
+c) 16 person-hours in total, leaving 4 of the allocation
+
+d) 11 person-hours in total, leaving 9 of the allocation
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip, küçük bir sürümün bütün test işlerini iki göreve ayırır. Uzmanların kişi-saat cinsinden tahminleri aşağıdadır: a = iyimser, m = en olası, b = kötümser.
 
@@ -204,9 +433,31 @@ c) Toplam 16 kişi-saat; ayrılan efordan 4 kişi-saat kalır.
 
 d) Toplam 11 kişi-saat; ayrılan efordan 9 kişi-saat kalır.
 
+</div>
+
 
 
 **Soru 10** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A new team member classifies an automated component check and an automated business acceptance check as Q1 because both are automated. What is the problem with this use of the testing quadrants?
+
+a) The quadrants distinguish perspective and purpose; the two checks need not share a quadrant
+
+b) The quadrants distinguish the language used for automation; both checks need different tools
+
+c) The quadrants distinguish when checks were written; both checks must follow implementation
+
+d) The quadrants distinguish the people running the checks; both checks need separate testers
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Yeni bir ekip üyesi, otomatik bir bileşen kontrolünü ve otomatik bir iş kabul kontrolünü ikisi de otomatik olduğu için Q1’e yerleştirir. Test çeyreklerinin (testing quadrants) bu kullanımındaki sorun nedir?
 
@@ -218,12 +469,34 @@ c) Çeyrekler testin yazıldığı zamanı ayırır; bu iki kontrol kodlamadan s
 
 d) Çeyrekler testleri koşan kişileri ayırır; bu iki kontrol ayrı test uzmanları gerektirir.
 
+</div>
+
 
 ### S11–S20
 
 
 
 **Soru 11** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A test plan describes the scope, approach and schedule, but stakeholders disagree about how they will receive progress information. Which addition belongs in the plan to address that gap?
+
+a) The detailed pass/fail log from each individual test run
+
+b) The exact commands used to execute each individual test
+
+c) The recipients, formats and frequency of status updates
+
+d) The completed investigation of each reported anomaly
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Test planında kapsam, yaklaşım ve takvim açıklanmıştır; ancak paydaşlar ilerleme bilgilerini nasıl alacakları konusunda anlaşamamaktadır. Bu boşluğu gidermek için plana ne eklenmelidir?
 
@@ -235,9 +508,31 @@ c) Durum bildirimlerinin alıcıları, biçimleri ve sıklığı
 
 d) Bildirilen her anomali için tamamlanmış inceleme sonuçları
 
+</div>
+
 
 
 **Soru 12** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A comparison service accepts any integer. It returns LOW for an input below 37, MATCH for 37, and HIGH for an input above 37. Applying 3-value boundary value analysis across all three partitions, how many distinct input values are needed for full coverage?
+
+a) 3
+
+b) 9
+
+c) 5
+
+d) 8
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir karşılaştırma servisi her tam sayıyı kabul eder. Girdi 37’den küçükse LOW, 37 ise MATCH, 37’den büyükse HIGH döndürür. Üç payın tamamında **3 değerli sınır değer analizi** (boundary value analysis) uygulandığında tam kapsam için kaç farklı girdi değeri gerekir?
 
@@ -249,9 +544,31 @@ c) 5
 
 d) 8
 
+</div>
+
 
 
 **Soru 13** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A release's product risk has increased, and its existing test schedule no longer looks adequate. The testing role is revising the test conditions. Which additional task belongs mainly to the test management role?
+
+a) Ranking the revised test conditions according to the product risks they address
+
+b) Assessing whether the test basis is detailed enough to design the revised cases
+
+c) Checking the prepared environment against the revised environment requirements
+
+d) Agreeing a revised test scope and resource allocation with the relevant stakeholders
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir sürümün ürün riski artmış ve mevcut test takvimi yetersiz görünmeye başlamıştır. Test rolünü üstlenenler test koşullarını yeniden ele almaktadır. Aşağıdaki ek görevlerden hangisi ağırlıklı olarak test yönetimi rolüne aittir?
 
@@ -263,9 +580,31 @@ c) Hazırlanan ortamın güncellenmiş test ortamı gereksinimlerini karşılay�
 
 d) Yeni test kapsamını ve kaynak dağılımını ilgili paydaşlarla kararlaştırmak
 
+</div>
+
 
 
 **Soru 14** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A user story has the acceptance criterion: "Registered customers who enter a valid promo code receive a 15% discount; an invalid or expired code (the system treats both as the same rejected-code case) must show an error message and charge the full price." The customer is registered in every test. Following ATDD, which set of test cases MOST completely covers this acceptance criterion?
+
+a) TC1: valid code entered → the 15% discount is applied to the order total at checkout
+
+b) TC1: valid code → 15% discount is applied; TC2: expired code → error message shown and the full price charged
+
+c) TC1: expired code → an error message is shown; TC2: invalid code → an error message is shown
+
+d) TC1: valid code → 15% discount is applied; TC2: valid code → the discount is stored in the order database
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir kullanıcı hikâyesinin kabul kriteri şöyledir: “Kayıtlı müşteri geçerli promosyon kodu girerse %15 indirim alır. Geçersiz veya süresi dolmuş kodda hata mesajı gösterilir ve tam fiyat alınır.” Sistem geçersiz ve süresi dolmuş kodları aynı reddedilen-kod durumu olarak işler. Bütün testlerde müşteri kayıtlıdır. Kabul testi güdümlü yazılım geliştirme (ATDD) kapsamında hangi test kümesi kriterin belirtilen davranışlarını **EN EKSİKSİZ** kapsar?
 
@@ -277,9 +616,31 @@ c) TC1: Süresi dolmuş kod → hata mesajı; TC2: Geçersiz kod → hata mesaj�
 
 d) TC1: Geçerli kod → %15 indirim; TC2: Geçerli kod → indirimin veri tabanında saklanması.
 
+</div>
+
 
 
 **Soru 15** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A tester configures a service-call tool, reads request and response logs, and uses database queries to investigate an inconsistent result. Which generic skill most directly enables this work?
+
+a) Domain knowledge of the business policies that determine the expected outcome
+
+b) Communication skills for presenting the investigation to business stakeholders
+
+c) Technical knowledge for using the tools and understanding the system's interfaces
+
+d) Teamwork skills for sharing responsibility for the investigation's outcome
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir test uzmanı servis çağrısı aracını yapılandırır, istek ve yanıt kayıtlarını okur ve tutarsız bir sonucu incelemek için veri tabanı sorguları kullanır. Bu işi en doğrudan hangi genel beceri mümkün kılar?
 
@@ -291,9 +652,31 @@ c) Araçları ve sistem arayüzlerini kullanmaya yönelik teknik bilgi
 
 d) İnceleme sorumluluğunu paylaşmaya yönelik ekip çalışması becerisi
 
+</div>
+
 
 
 **Soru 16** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+After an exploratory session, stakeholders ask which paths the tester followed and what was discovered. The tester proposes recording this information on a session sheet for the debriefing. How does this fit exploratory testing?
+
+a) It turns the session into scripted testing because documenting steps fixes them in advance
+
+b) It replaces the need to evaluate results while exploring the test object
+
+c) It records the exploration and findings so they can be discussed after the session
+
+d) It establishes that every area in the test object was exercised during the session
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir keşif testi oturumundan sonra paydaşlar test uzmanının hangi yolları izlediğini ve neler bulduğunu sorar. Uzman bu bilgileri oturum sonrası değerlendirme için test oturum formuna kaydetmeyi önerir. Bu öneri keşif testiyle (exploratory testing) nasıl ilişkilidir?
 
@@ -305,9 +688,31 @@ c) Keşfedilen yolları ve bulguları oturum sonrasında görüşülebilecek bi�
 
 d) Oturum sırasında test nesnesinin her alanının çalıştırıldığını ortaya koyar.
 
+</div>
+
 
 
 **Soru 17** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+How can information obtained from testing contribute to quality assurance?
+
+a) By making the test team responsible for correcting the faults it reports
+
+b) By helping the organization improve the processes used to develop software
+
+c) By replacing process assessments with the pass rates of the executed tests
+
+d) By establishing that a tested release satisfies every future user's needs
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Testten elde edilen bilgiler kalite güvencesine (quality assurance) nasıl katkıda bulunabilir?
 
@@ -319,9 +724,31 @@ c) Süreç değerlendirmelerinin yerine testlerin geçme oranını koyarak
 
 d) Sınanan sürümün gelecekteki bütün kullanıcı ihtiyaçlarını karşıladığını kanıtlayarak
 
+</div>
+
 
 
 **Soru 18** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+What can testers contribute to colleagues through close cooperation in the whole team approach?
+
+a) Testing knowledge that helps influence how the product is developed
+
+b) Authority to approve the business priorities on behalf of the product owner
+
+c) A transfer of the developers' implementation duties to the testers
+
+d) A separation of quality discussions from the team's development decisions
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Tüm ekip yaklaşımında (whole team approach) yakın iş birliği yapan test uzmanları, diğer ekip üyelerine hangi katkıyı sunabilir?
 
@@ -333,9 +760,31 @@ c) Geliştiricilerin kodlama sorumluluğunu test uzmanlarına aktarmak
 
 d) Kalite tartışmalarını ekibin geliştirme kararlarından ayırmak
 
+</div>
+
 
 
 **Soru 19** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+What is the stated purpose of giving different test levels distinct test objectives?
+
+a) To make defect correction unnecessary after the first test level has finished
+
+b) To reduce unnecessary repetition of testing work between the test levels
+
+c) To assign each test technique to a different level regardless of the test purpose
+
+d) To replace work-product reviews with test execution at the later test levels
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Farklı test seviyelerine ayrı test hedefleri verilmesinin belirtilen amacı nedir?
 
@@ -347,9 +796,31 @@ c) Her test tekniğinin, hedefinden bağımsız olarak başka bir seviyeye atanm
 
 d) İş ürünü gözden geçirmelerinin yerini sonraki seviyelerdeki test koşumunun alması
 
+</div>
+
 
 
 **Soru 20** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+An import service handles file extensions as follows: 'csv', 'json' and 'xml' each select a different supported reader; an empty extension returns MISSING; any other extension returns UNSUPPORTED. Each test supplies one extension. Four tests use the extensions 'csv', 'json', 'json' and an empty string. What equivalence partition coverage do these tests achieve across all the specified behaviors?
+
+a) 40%
+
+b) 80%
+
+c) 60%
+
+d) 100%
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir içe aktarma servisi `csv`, `json` ve `xml` uzantıları için üç farklı desteklenen okuyucu seçer; boş uzantıda MISSING, bunların dışındaki bir uzantıda UNSUPPORTED döndürür. Her test tek uzantı verir. Dört testin girdileri `csv`, `json`, `json` ve boş metindir. Geçerli ve geçersiz paylar birlikte sayıldığında, denklik paylarına ayırma (equivalence partitioning) kapsamında bu testler yüzde kaç kapsam sağlar?
 
@@ -361,12 +832,34 @@ c) %60
 
 d) %100
 
+</div>
+
 
 ### S21–S30
 
 
 
 **Soru 21** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Which outcome is a stated benefit of obtaining frequent feedback from stakeholders during development?
+
+a) The stakeholders take over the team's responsibility for test execution
+
+b) The agreed scope stops changing after the first feedback discussion
+
+c) The team can substitute informal comments for its acceptance criteria
+
+d) The team can focus its effort on features that provide value to users
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Geliştirme sırasında paydaşlardan sık geri bildirim alınmasının belirtilen faydalarından biri hangisidir?
 
@@ -378,9 +871,31 @@ c) Ekibin kabul kriterleri yerine gayriresmî yorumları kullanabilmesi
 
 d) Ekibin çabasını kullanıcıya değer sağlayan özelliklere yöneltebilmesi
 
+</div>
+
 
 
 **Soru 22** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team reviews both short user stories and a large contractual specification. A lead insists that the generic review process requires exactly the same detailed tasks and effort for both. Which response correctly describes the generic process?
+
+a) Select suitable tasks and formality for the work product and the review's purpose
+
+b) Rename the activities for each product, but keep their detailed tasks identical
+
+c) Adjust the scope, but require equal depth and effort for every activity in both reviews
+
+d) Use a review process for the contract and leave the short stories without a process
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip hem kısa kullanıcı hikâyelerini hem de büyük bir sözleşme belirtimini gözden geçirir. Ekip lideri, genel gözden geçirme sürecinin her ikisinde de tam olarak aynı ayrıntılı görevleri ve eforu gerektirdiğini ileri sürer. Genel süreci doğru açıklayan yanıt hangisidir?
 
@@ -392,9 +907,31 @@ c) Kapsamı uyarlayın, ancak iki gözden geçirmedeki her aktiviteye eşit deri
 
 d) Sözleşme için gözden geçirme süreci kullanın, kısa hikâyeleri süreç dışında bırakın.
 
+</div>
+
 
 
 **Soru 23** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+An organization is considering removing an optional connector from an operational system. Before authorizing the change, the test team is asked to perform impact analysis. What is the purpose of that analysis at this point?
+
+a) To produce pass/fail results for the tests that would follow implementation
+
+b) To estimate the number of remaining defects from the previous release's pass rate
+
+c) To identify affected areas and inform the decision whether to proceed
+
+d) To establish that components outside the connector can be excluded from future testing
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir kuruluş, çalışan bir sistemden isteğe bağlı bir bağlayıcıyı kaldırmayı düşünmektedir. Değişikliği onaylamadan önce test ekibinden etki analizi (impact analysis) istenir. Analizin bu aşamadaki amacı nedir?
 
@@ -406,9 +943,31 @@ c) Etkilenecek alanları belirleyip değişikliğe devam etme kararına girdi sa
 
 d) Bağlayıcı dışındaki bileşenlerin sonraki test kapsamından çıkarılmasını kesinleştirmek
 
+</div>
+
 
 
 **Soru 24** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A self-organizing agile team wants everyone to see the current state of testing at any moment, without waiting for a written document. Which means of communicating test status BEST fits this need?
+
+a) A test completion report distributed at the end of each test level
+
+b) A monthly e-mail summary sent to all stakeholders
+
+c) Minutes of the weekly status meetings
+
+d) Dashboards such as task boards or burn-down charts
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Kendi kendini organize eden çevik bir ekip, yazılı bir belgeyi beklemeden herkesin testin güncel durumunu her an görebilmesini ister. Hangi iletişim yöntemi bu ihtiyaca **EN İYİ** uyar?
 
@@ -420,9 +979,39 @@ c) Haftalık durum toplantılarının tutanakları
 
 d) Görev panosu veya burn-down tablosu içeren gösterge paneli
 
+</div>
+
 
 
 **Soru 25** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team uses requirements-based prioritization. At each step it chooses the currently executable test case covering the highest-priority requirement (1 is highest). Prerequisites must have passed. TC-P has passed and no other test case has run. Which test case should run next?
+
+| Test case | Requirement priority | Prerequisite | Status |
+|---|---|---|---|
+| TC-P | 4 | None | Passed |
+| TC-Q | 2 | None | Not run |
+| TC-R | 1 | TC-P | Not run |
+| TC-S | 1 | TC-T | Not run |
+| TC-T | 3 | None | Not run |
+
+a) TC-Q
+
+b) TC-R
+
+c) TC-S
+
+d) TC-T
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip gereksinim bazlı önceliklendirme kullanır. Her adımda, ön koşulları geçmiş ve o anda koşulabilir testler arasından en yüksek öncelikli gereksinimi kapsayanı seçer; 1 en yüksek önceliktir. TC-P geçmiştir, başka test koşulmamıştır.
 
@@ -444,9 +1033,31 @@ c) TC-S
 
 d) TC-T
 
+</div>
+
 
 
 **Soru 26** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+An iteration retrospective identifies a useful improvement to test data preparation. The team agrees on an owner and a follow-up date, but proposes leaving the outcome undocumented because everyone attended the meeting. Which response BEST supports effective use of the retrospective?
+
+a) Record the outcome, include it in completion reporting and follow up the action
+
+b) Replace the outcome with the iteration's pass rate in the completion report
+
+c) Ask the testers to keep the outcome within their own group until the release
+
+d) Repeat the discussion at the end of the project before assigning any action
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir döngü sonunda geçmişe dönük öğeler (retrospectives) ele alınırken test verisi hazırlığını iyileştirecek bir adım belirlenir. Ekip sorumluyu ve takip tarihini kararlaştırır; fakat herkes toplantıda olduğu için sonucu yazmamayı önerir. Bu çalışmadan etkili biçimde yararlanmayı **EN İYİ** destekleyen yanıt hangisidir?
 
@@ -458,9 +1069,31 @@ c) Sonucu sürüm çıkana kadar test uzmanlarının kendi grubu içinde tutun.
 
 d) Aksiyon atamadan önce proje sonunda konuyu yeniden tartışın.
 
+</div>
+
 
 
 **Soru 27** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+During component testing, a team uses a coverage tool and reports that their tests exercised 85% of the branches. Which value of white-box testing does this illustrate?
+
+a) The thoroughness of testing can be measured objectively through code coverage
+
+b) Coverage figures prove that the component meets its requirements
+
+c) The measured coverage shows that the remaining 15% of branches contain no defects
+
+d) High coverage figures show that testing is complete and the component is ready for release
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bileşen testi yapan bir ekip, kapsam aracından testlerinin dalların %85’ini çalıştırdığını öğrenir. Bu sonuç beyaz kutu testinin hangi değerini örnekler?
 
@@ -472,9 +1105,31 @@ c) Kalan %15’lik dal kümesinde hata bulunmadığının ölçümle gösterilme
 
 d) Yüksek kapsamın testin tamamlandığını ve bileşenin yayıma hazır olduğunu göstermesi
 
+</div>
+
 
 
 **Soru 28** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Budget reductions leave a project with less time for security testing. The team identifies a greater chance that an unauthorized-access problem will reach production. Which statement BEST explains the relationship between the risks described?
+
+a) Both items stop being risks because neither adverse outcome has occurred yet
+
+b) The budget change turns the unauthorized-access risk into a project risk
+
+c) Project constraints can increase exposure to a product quality risk
+
+d) Assessing the access problem removes the need to manage the budget problem
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bütçe kesintileri nedeniyle bir projede güvenlik testi için daha az zaman kalır. Ekip, yetkisiz erişim sorununun üretime ulaşma olasılığının arttığını belirler. Bu riskler arasındaki ilişkiyi **EN İYİ** açıklayan ifade hangisidir?
 
@@ -486,9 +1141,39 @@ c) Proje kısıtları, bir ürün kalitesi riskine maruz kalmayı artırabilir.
 
 d) Erişim sorununu değerlendirmek, bütçe sorununu yönetme ihtiyacını kaldırır.
 
+</div>
+
 
 
 **Soru 29** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A search requirement says that leading and trailing spaces are ignored, but spaces inside a query are significant. The catalog contains one item named 'harita'. In build 6.4, on Browser X 129.0 / OS Y 15.1, a tester records:
+
+| Query, including the shown spaces | Actual result |
+|---|---|
+| `"harita"` | The harita item is returned |
+| `" harita "` | No items are returned |
+| `"h arita"` | No items are returned |
+
+Which defect description is supported by this requirement and these observations?
+
+a) Search returns the harita item for 'harita' but no items for ' harita '; both should return that item
+
+b) Search fails for the query 'harita', so the item cannot be retrieved without surrounding spaces
+
+c) The query parser is corrupting the database whenever a query contains any space character
+
+d) Search returns no items for 'h arita', although internal spaces should be ignored like outer spaces
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Arama gereksinimine göre sorgunun başındaki ve sonundaki boşluklar yok sayılır; içindeki boşluklar anlamlıdır. Katalogda adı `harita` olan tek bir öğe vardır. Yapı (build) 6.4, Tarayıcı X 129.0 / İşletim Sistemi Y 15.1 ortamında şu sonuçlar kaydedilir:
 
@@ -508,9 +1193,31 @@ c) Sorgu ayrıştırıcısı, boşluk içeren her sorguda veri tabanındaki kay�
 
 d) `h arita` sonuç döndürmez; iç boşluklar da dış boşluklar gibi yok sayılmalıdır.
 
+</div>
+
 
 
 **Soru 30** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team starts testing a new application. A tester wants to design tests for likely programming mistakes, using general knowledge of why software fails. A lead rejects the idea because no failures have yet been observed in this application. Which response BEST explains the use of error guessing here?
+
+a) Wait for a failure in this application so that the technique has a confirmed observation
+
+b) Anticipated mistakes can guide tests without a prior failure in this particular application
+
+c) Replace the predicted mistakes with branch counts to preserve an experience-based approach
+
+d) Treat the predicted mistakes as confirmed product defects before running the tests
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Yeni bir uygulamanın testine başlayan ekipte bir test uzmanı, yazılımların neden arızalandığına ilişkin genel bilgisiyle olası programlama yanlışları için testler tasarlamak ister. Lider, bu uygulamada henüz arıza görülmediği için öneriyi reddeder. Burada hata tahminlemenin (error guessing) kullanılmasını **EN İYİ** açıklayan yanıt hangisidir?
 
@@ -522,12 +1229,34 @@ c) Tecrübeye dayalı kalmak için öngörülen yanlışlar yerine dal sayılar�
 
 d) Testler koşulmadan önce öngörülen yanlışlar doğrulanmış ürün hataları sayılmalıdır.
 
+</div>
+
 
 ### S31–S40
 
 
 
 **Soru 31** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A tester designs additional tests based on intuition and on knowledge of how similar applications have behaved, without referring to the specification or to the code structure. Which category of test techniques is being used?
+
+a) Black-box (specification-based) test techniques
+
+b) White-box (structure-based) test techniques
+
+c) Experience-based test techniques
+
+d) Risk-based test techniques
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir test uzmanı, belirtime veya kod yapısına başvurmadan sezgisine ve benzer uygulamaların davranışları hakkındaki bilgisine dayanarak ek testler tasarlar. Hangi test tekniği kategorisini kullanmaktadır?
 
@@ -539,9 +1268,31 @@ c) Tecrübeye dayalı test teknikleri
 
 d) Risk bazlı test teknikleri
 
+</div>
+
 
 
 **Soru 32** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A requirement says that an account must lock after three invalid passwords. The application still allows a fourth attempt. An engineer changes the test's expected result to allow that fourth attempt, and the test now passes; the requirement and application have not changed. Which statement correctly distinguishes testing from debugging in this situation?
+
+a) Testing should locate and remove the product defect; debugging should adjust the expected test result
+
+b) Testing is complete when the edited test passes; debugging is unnecessary if the requirement is unchanged
+
+c) Testing should accept the observed behavior as its expectation; debugging should document it as the requirement
+
+d) Testing should compare the product with the agreed requirement; debugging should remove the cause of the incorrect behavior
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Gereksinime göre hesap, üç yanlış parola girişinden sonra kilitlenmelidir. Uygulama dördüncü denemeye de izin verir. Bir mühendis testin beklenen sonucunu dördüncü denemeyi kabul edecek biçimde değiştirince test geçer; gereksinim ve uygulama değişmemiştir. Bu durumda test ile hata ayıklamayı (debugging) doğru ayıran ifade hangisidir?
 
@@ -553,9 +1304,31 @@ c) Test gözlenen davranışı beklenti kabul etmeli; hata ayıklama bunu gereks
 
 d) Test ürünü gereksinimle karşılaştırmalı; hata ayıklama yanlış davranışın nedenini gidermelidir.
 
+</div>
+
 
 
 **Soru 33** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+After introducing DevOps, a team can inspect performance and reliability trends from checks in each delivery pipeline run. The team uses the trends to discuss changes in these quality characteristics. Which testing benefit is illustrated?
+
+a) Assurance that the delivered functions satisfy every business requirement
+
+b) Greater insight into non-functional aspects of the delivered software
+
+c) Reduced maintenance effort for the checks as the product evolves
+
+d) A quality verdict for untested changes based on earlier pipeline results
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 DevOps kullanmaya başlayan bir ekip, teslimat hattının her koşumunda performans verimliliği ve güvenilirlik eğilimlerini görür. Bu kalite özelliklerindeki değişimleri değerlendirmek için eğilimleri kullanır. Hangi test faydası örneklenmektedir?
 
@@ -567,9 +1340,31 @@ c) Ürün geliştikçe kontrollerin bakımında gereken çabanın azalması
 
 d) Önceki hat sonuçlarıyla sınanmamış değişikliklerin kalitesine karar verme
 
+</div>
+
 
 
 **Soru 34** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A project introduces requirement reviews and code reviews in addition to its existing dynamic test levels. Which statement BEST describes the value this adds?
+
+a) The reviews find the same defects as dynamic testing, but document them better
+
+b) Defects can be detected earlier and removed more cheaply, before test execution begins
+
+c) The reviews make later dynamic testing unnecessary for the reviewed work products
+
+d) The reviews speed up test execution, because reviewed code runs faster
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir proje, mevcut dinamik test seviyelerine ek olarak gereksinim ve kod gözden geçirmelerini başlatır. Bunun eklediği değeri **EN İYİ** açıklayan ifade hangisidir?
 
@@ -581,9 +1376,31 @@ c) Gözden geçirilen iş ürünlerinde sonraki dinamik testlere gerek kalmaz.
 
 d) Gözden geçirilen kod daha hızlı çalışacağı için test koşumu hızlanır.
 
+</div>
+
 
 
 **Soru 35** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team reruns a branch test suite ten times. Some runs use different input values, but every run exercises exactly the branches covered by the first run. The code is unchanged. How does the repetition affect branch coverage?
+
+a) Each distinct input adds another item to branch coverage
+
+b) Each distinct path through those branches adds another item to branch coverage
+
+c) The suite's coverage is replaced by the branches exercised by its final test
+
+d) It stays at the original level because no additional branch is exercised
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip dal test grubunu on kez yeniden koşar. Bazı koşumlarda farklı girdiler kullanılır, fakat her koşum ilk koşumdaki dalların tam olarak aynısını çalıştırır. Kod değişmemiştir. Tekrarlar dal kapsama yüzdesini nasıl etkiler?
 
@@ -595,9 +1412,31 @@ c) Grubun kapsamı, son testin çalıştırdığı dallarla değiştirilir.
 
 d) Yeni bir dal çalıştırılmadığı için kapsama yüzdesi değişmez.
 
+</div>
+
 
 
 **Soru 36** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team evaluates fault tolerance by designing tests from the error-recovery branches in a component's source code. What are the classifications of the test objective and the basis used to derive the tests, respectively?
+
+a) Functional testing, then white-box testing
+
+b) White-box testing, then non-functional testing
+
+c) Non-functional testing, then black-box testing
+
+d) Non-functional testing, then white-box testing
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip hata toleransını değerlendirmek için bir bileşenin kaynak kodundaki hata sonrası toparlanma dallarından testler türetir. Testin amacı ve testlerin türetildiği esas, sırasıyla nasıl sınıflandırılır?
 
@@ -609,9 +1448,31 @@ c) Fonksiyonel olmayan test; kara kutu testi
 
 d) Fonksiyonel olmayan test; beyaz kutu testi
 
+</div>
+
 
 
 **Soru 37** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+During collaborative refinement, a team agrees that a user story has clear business value, can be estimated and tested, and is small enough for an iteration. However, it is tightly coupled to another story and cannot be delivered separately. Which INVEST characteristic needs attention?
+
+a) Valuable, because the story's result provides no benefit to a user
+
+b) Estimable, because the team has not formed an effort estimate
+
+c) Testable, because the team has no way to check the result
+
+d) Independent, because the stories have a delivery dependency
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 İş birliğine dayalı olgunlaştırma sırasında ekip, bir kullanıcı hikâyesinin açık iş değeri taşıdığını, tahminlenebilir ve test edilebilir olduğunu ve bir döngüye sığacak kadar küçük olduğunu kararlaştırır. Ancak hikâye başka bir hikâyeye sıkı bağlıdır ve ayrı teslim edilememektedir. INVEST’in hangi özelliğine dikkat edilmelidir?
 
@@ -623,9 +1484,31 @@ c) Test edilebilir (Testable); çünkü ekip sonucu kontrol etmenin yolunu bulam
 
 d) Bağımsız (Independent); çünkü hikâyelerin teslimatı birbirine bağlıdır.
 
+</div>
+
 
 
 **Soru 38** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+During requirements reviews, a team uses a document tool to associate each comment with the relevant passage and collect the reviewers' findings. A colleague says it cannot support testing because people still judge the content. Which response is correct?
+
+a) The tool belongs to test execution because running any software tool is dynamic testing
+
+b) Human judgment prevents a document review from receiving meaningful tool support
+
+c) Static testing can receive tool support while people make the judgments
+
+d) Review comments become test management data regardless of the activity the tool supports
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip gereksinim gözden geçirmelerinde her yorumu ilgili metin parçasına bağlayan ve gözden geçiricilerin bulgularını toplayan bir belge aracı kullanır. Bir çalışma arkadaşı, içeriği insanlar değerlendirdiği için aracın testi destekleyemeyeceğini söyler. Doğru yanıt hangisidir?
 
@@ -637,9 +1520,31 @@ c) İçeriğe ilişkin yargıyı insanlar oluştururken statik test de araçlarl
 
 d) Aracın desteklediği aktiviteye bakılmaksızın yorumlar test yönetimi verisi olarak sınıflandırılır.
 
+</div>
+
 
 
 **Soru 39** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+Two teams use the same lifecycle and have similar staffing. One tests a browser extension across browser configurations; the other tests sensor firmware using a hardware rig and simulated device interfaces. Which contextual factor most directly explains these different test environments?
+
+a) The lifecycle requires different test environments even when it is the same for both teams
+
+b) The technical characteristics of each test object affect the environment needed for testing
+
+c) The staffing level determines which interfaces each product needs to expose
+
+d) The test environment should be standardized across products regardless of their interfaces
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Aynı yaşam döngüsünü kullanan ve benzer sayıda çalışanı olan iki ekipten biri tarayıcı eklentisini farklı tarayıcı ayarlarında, diğeri sensör aygıt yazılımını donanım düzeneği ve benzetimli cihaz arayüzleriyle sınar. Test ortamlarının farklı olmasını en doğrudan hangi bağlam faktörü açıklar?
 
@@ -651,9 +1556,31 @@ c) Ekiplerdeki çalışan sayısının ürünlerin sunacağı arayüzleri belirl
 
 d) Ürün arayüzlerinden bağımsız ortak bir test ortamının standartlaştırılması
 
+</div>
+
 
 
 **Soru 40** (1 puan)
+
+<div lang="en" class="bilingual-en">
+
+**EN**
+
+A team adds new tests as its product evolves but also keeps a stable set of checks for existing behavior. A colleague says the principle 'tests wear out' means those stable checks should be discarded merely because they are repeated. Which response BEST interprets the principle?
+
+a) The stable checks should replace the new tests because their past results are known
+
+b) A check that passed before can be omitted when the same behavior is changed
+
+c) Repeated checks can still help reveal regressions, while new tests address new defect opportunities
+
+d) Repeated checks establish that the previously tested behavior remains free of defects
+
+</div>
+
+<div lang="tr" class="bilingual-tr">
+
+**TR**
 
 Bir ekip ürün geliştikçe yeni testler eklerken mevcut davranışlar için yerleşik bir test kümesini de korur. Bir çalışma arkadaşı, “testler yıpranır (tests wear out)” ilkesinin bu kontrollerin tekrarlandıkları için atılmasını gerektirdiğini söyler. İlkeyi **EN İYİ** yorumlayan yanıt hangisidir?
 
@@ -664,6 +1591,8 @@ b) Daha önce geçen bir kontrol, sınadığı davranış değiştiğinde atlana
 c) Tekrarlar regresyonları bulabilir; yeni testler farklı hataları arar.
 
 d) Tekrarlanan kontroller, sınanan mevcut davranışların hatasız kaldığını kanıtlar.
+
+</div>
 
 
 ## Part 2 — Cevap anahtarı ve skor değerlendirmesi

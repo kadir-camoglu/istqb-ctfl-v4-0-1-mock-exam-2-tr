@@ -1,6 +1,6 @@
 # ISTQB® CTFL® v4.0.1 — Türkçe Deneme Sınavı 2
 
-40 soru, cevap anahtarı ve ayrıntılı Türkçe açıklamalar.
+40 soru; İngilizce ve Türkçe soru ve seçenekler, cevap anahtarı ve ayrıntılı Türkçe açıklamalar.
 
 [Denemeyi aç](https://kadir-camoglu.github.io/istqb-ctfl-v4-0-1-mock-exam-2-tr/)
 
